@@ -1,15 +1,16 @@
 {
-  "name": "angular-seed",
+  "name": "static-seed",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/soosc/angular-seed",
+  "description": "Static seed",
+  "repository": "https://github.com/soosc/static-seed",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.4.8",
     "angular-resource": "^1.4.8",
     "bootstrap-sass": "^3.3.6",
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "moment": "^2.11.1"
   },
   "devDependencies": {
     "ejs": "^2.3.4",

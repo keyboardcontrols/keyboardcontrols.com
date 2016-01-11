@@ -20,7 +20,8 @@ gulp.task('scripts', function() {
   var vendor = [
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/angular/angular.min.js',
-    './node_modules/angular-resource/angular-resource.min.js'
+    './node_modules/angular-resource/angular-resource.min.js',
+    './node_modules/moment/min/moment.min.js',
   ];
 
   return streamqueue({objectMode: true},
@@ -53,9 +54,11 @@ gulp.task('watch:scripts', function () {
 
 gulp.task('watch:src', function () {
   gulp.watch([
-    './src/css/**/*.css',
-    './src/js/**/*.js',
-    './src/**/*.{html,md,json}',
+    './src/**/*.css',
+    './src/**/*.js',
+    './src/**/*.html',
+    './src/**/*.js',
+    './src/**/*.json',
     './_layouts/*',
     './_partials/*'
   ], ['metalsmith']);
