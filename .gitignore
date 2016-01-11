@@ -1,0 +1,7 @@
+node_modules
+.aws.json
+.awspublish*
+build
+Thumbs.db
+src/app.css
+src/app.js

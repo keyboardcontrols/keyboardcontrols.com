@@ -1,0 +1,35 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/soosc/angular-seed",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-resource": "^1.4.8",
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "ejs": "^2.3.4",
+    "gulp": "^3.9",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-awspublish": "^3.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-load-plugins": "^1.1",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-shell": "^0.5.1",
+    "gulp-uglify": "^1.5.1",
+    "live-server": "^0.9.0",
+    "metalsmith": "^2.1.0",
+    "metalsmith-layouts": "^1.4.2",
+    "metalsmith-markdown": "^0.2.1",
+    "streamqueue": "1.1.x"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "live-server --port=8000 --host=127.0.0.1 --ignore=scaffolds,src,source,themes"
+  }
+}
