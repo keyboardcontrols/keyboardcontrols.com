@@ -1,0 +1,13 @@
+.page-container {
+  @include make-row();
+
+  .page {
+    @include make-lg-column(8);
+    @include make-lg-column-offset(2);
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
