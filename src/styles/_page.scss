@@ -1,13 +1,10 @@
-.page-container {
-  @include make-row();
+@import "colors";
 
-  .page {
-    @include make-lg-column(8);
-    @include make-lg-column-offset(2);
-  }
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+a {
+    color: $primary-color;
 }

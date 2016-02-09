@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {{> head }}
+    <body>
+        {{> navbar }}
+        <div class="max-width-3 mx-auto">
+            <div class="clearfix">
+                <div class="">
+                    <ul>
+                        {{#each collections.articles}}
+                            <li>
+                              {{date date}} - <a href="{{articleSlug date title}}">{{title}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

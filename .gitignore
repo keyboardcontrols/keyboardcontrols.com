@@ -3,5 +3,3 @@ node_modules
 .awspublish*
 build
 Thumbs.db
-src/app.css
-src/app.js

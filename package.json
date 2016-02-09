@@ -3,19 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "description": "Static seed",
-  "repository": "https://github.com/soosc/static-seed",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soosc/static-seed"
+  },
+  "author": "Andrew Bartel",
   "license": "MIT",
   "dependencies": {
-    "bootstrap-sass": "^3.3.6",
+    "basscss": "8.0.0-beta5",
     "handlebars": "^4.0.5",
-    "moment": "^2.11.1"
+    "moment": "^2.11.1",
+    "normalize.css": "3.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9",
     "gulp-awspublish": "^3.0.1",
-    "gulp-gm": "^0.0",
-    "gulp-imagemin": "^2.4",
     "gulp-load-plugins": "^1.1",
+    "gulp-scp2": "^0.2.0",
     "gulp-shell": "^0.5.1",
     "live-server": "^0.9.0",
     "lodash": "^4.0.0",
@@ -27,7 +32,6 @@
     "metalsmith-uglify": "1.2.1"
   },
   "scripts": {
-    "prestart": "npm install",
-    "start": "live-server --port=8000 --host=127.0.0.1"
+    "start": "node live-server.js"
   }
 }

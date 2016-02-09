@@ -19,9 +19,12 @@ handlebars.registerHelper('articleSlug', function(date, title) {
 });
 
 Metalsmith(__dirname)
+  .clean(false)
   .ignore([
     '**/scripts/*',
-    '**/styles/*'
+    '**/styles/*',
+    '**/_layouts/*',
+    '**/_partials/*'
   ])
   .source('src')
   .destination('build')
@@ -39,15 +42,16 @@ Metalsmith(__dirname)
   }))
   .use(layouts({
     default: 'default.html',
-    directory: '_layouts',
+    directory: 'src/_layouts',
     engine: 'handlebars',
-    partials: '_partials'
+    partials: 'src/_partials'
   }))
   .build(function(err) {
     if (err) throw err;
   });
 
 Metalsmith(__dirname)
+  .clean(false)
   .source('src/scripts')
   .destination('build')
   .use(uglify({
@@ -59,11 +63,15 @@ Metalsmith(__dirname)
   });
 
 Metalsmith(__dirname)
+  .clean(false)
   .source('src/styles')
   .destination('build')
   .use(sass({
     outputStyle: 'compressed',
-    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets']
+    includePaths: [
+      './node_modules/basscss/css',
+      './node_modules/normalize.css'
+    ]
   }))
   .build(function(err) {
     if (err) throw err;

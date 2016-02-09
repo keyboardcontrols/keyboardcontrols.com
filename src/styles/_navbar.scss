@@ -1,20 +1,12 @@
-.navbar-nav > li > a {
-  text-transform: uppercase;
-}
+@import "colors";
 
-.navbar-container {
-  @include make-row();
-
-  .navbar-content {
-    @include make-lg-column(8);
-    @include make-lg-column-offset(2);
-  }
-}
-
-.navbar-brand {
+#navbar .brand {
   font-weight: 600;
+  font-size: 1.2em;
 }
 
-.navbar-default .navbar-nav > li > a {
-  font-weight: 600;
+#navbar a {
+    font-size: .9em;
+    text-decoration: none;
+    color: #333;
 }
