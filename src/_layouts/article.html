@@ -6,13 +6,9 @@
         <div class="max-width-3 mx-auto">
             <div class="clearfix">
                 <div class="">
-                    <ul>
-                        {{#each collections.articles}}
-                            <li>
-                              {{date date}} - <a href="{{articleSlug date title}}">{{title}}</a>
-                            </li>
-                        {{/each}}
-                    </ul>
+                    <h1 class="title">{{title}}</h1>
+                    <timeclass="article-date">{{date date}}</time>
+                    {{{contents}}}
                 </div>
             </div>
         </div>
