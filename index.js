@@ -1,6 +1,7 @@
 var Metalsmith = require('metalsmith'),
     _ = require('lodash'),
     collections = require('metalsmith-collections'),
+    drafts = require('./plugins/drafts'),
     handlebars = require('handlebars'),
     layouts = require('metalsmith-layouts'),
     markdown = require('metalsmith-markdown'),
@@ -27,6 +28,7 @@ Metalsmith(__dirname)
     '**/_partials/*'
   ])
   .source('src')
+  .use(drafts())
   .destination('build')
   .use(collections({
     articles: {
@@ -70,6 +72,7 @@ Metalsmith(__dirname)
     outputStyle: 'compressed',
     includePaths: [
       './node_modules/basscss/css',
+      './node_modules/highlight.js/styles',
       './node_modules/normalize.css'
     ]
   }))

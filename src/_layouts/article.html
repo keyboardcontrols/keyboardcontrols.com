@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
-    {{> head }}
-    <body>
-        {{> navbar }}
-        <div class="max-width-3 mx-auto">
-            <div class="clearfix">
-                <div class="">
-                    <h1 class="title">{{title}}</h1>
-                    <timeclass="article-date">{{date date}}</time>
-                    {{{contents}}}
-                </div>
-            </div>
-        </div>
-    </body>
+{{> head }}
+<body>
+  {{> navbar }}
+  <div class="max-width-3 mx-auto">
+    <div class="clearfix">
+      <div class="article-head">
+        <h2 class="title">{{title}}</h2>
+        <time class="article-date">{{date date}}</time>
+        <span class="tag-list clearfix">
+          {{#each tags}}
+            <a href="/tags/{{this}}.html">#{{this}}</a>
+          {{/each}}
+        </span>
+      </div>
+      <div class="article-contents">
+        {{{contents}}}
+      </div>
+    </div>
+  </div>
+</body>
 </html>

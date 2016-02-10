@@ -1,26 +1,25 @@
+.article-head {
+  text-align: center;
+
+  .tag-list {
+    
+  }
+}
+
 .article-date {
   color: #AAA;
-  font-size: 1.5rem;
+  font-size: .9em;
 }
 
-h1.title {
-  font-size: 4rem;
-  font-weight: bold;
-  line-height: 3rem;
-}
+.article-contents {
+  margin-top: 40px;
+  line-height: 2rem;
 
-.article-subtitle {
-  font-size: 2.5rem;
-  font-weight: 300;
-}
-
-
-.content {
-  margin-top: 20px;
-
-  p, li {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 28px;
+  .hljs {
+    line-height: 1em;
   }
+}
+
+h2 {
+  margin-bottom: 2px;
 }

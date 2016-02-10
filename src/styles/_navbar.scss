@@ -1,12 +1,13 @@
-@import "colors";
+@import "variables";
 
 #navbar .brand {
   font-weight: 600;
   font-size: 1.2em;
+  color: #333;
 }
 
 #navbar a {
     font-size: .9em;
     text-decoration: none;
-    color: #333;
+    color: darken( $primary-color, 10% );
 }
