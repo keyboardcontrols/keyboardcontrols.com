@@ -54,18 +54,6 @@ Metalsmith(__dirname)
 
 Metalsmith(__dirname)
   .clean(false)
-  .source('src/scripts')
-  .destination('build')
-  .use(uglify({
-    preserveComments: true,
-    removeOriginal: true
-  }))
-  .build(function(err) {
-    if (err) throw err;
-  });
-
-Metalsmith(__dirname)
-  .clean(false)
   .source('src/styles')
   .destination('build')
   .use(sass({
