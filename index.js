@@ -1,13 +1,11 @@
 var Metalsmith = require('metalsmith'),
     _ = require('lodash'),
-    collections = require('metalsmith-collections'),
-    drafts = require('./plugins/drafts'),
+    collections = require('metalsmith-collections')
     handlebars = require('handlebars'),
     layouts = require('metalsmith-layouts'),
     markdown = require('metalsmith-markdown'),
     moment = require('moment'),
-    sass = require('metalsmith-sass'),
-    uglify = require('metalsmith-uglify');
+    publishon = require('metalsmith-publishon');
 
 handlebars.registerHelper('date', function(date) {
   return moment(date).format('MMMM DD, YYYY');
@@ -28,7 +26,9 @@ Metalsmith(__dirname)
     '**/_partials/*'
   ])
   .source('src')
-  .use(drafts())
+  .use(publishon({
+    pattern: /articles\/\.md/
+  }))
   .destination('build')
   .use(collections({
     articles: {
@@ -47,23 +47,6 @@ Metalsmith(__dirname)
     directory: 'src/_layouts',
     engine: 'handlebars',
     partials: 'src/_partials'
-  }))
-  .build(function(err) {
-    if (err) throw err;
-  });
-
-Metalsmith(__dirname)
-  .clean(false)
-  .source('src/styles')
-  .destination('build')
-  .use(sass({
-    outputStyle: 'compressed',
-    includePaths: [
-      './node_modules/basscss/css',
-      './node_modules/colors.css/sass',
-      './node_modules/highlight.js/styles',
-      './node_modules/normalize.css'
-    ]
   }))
   .build(function(err) {
     if (err) throw err;
