@@ -13,8 +13,9 @@ handlebars.registerHelper('date', function(date) {
 
 handlebars.registerHelper('articleSlug', function(date, title) {
   var formattedDate = moment(date).format('YYYY-MM-DD');
+  var titleSlug = _.replace(_.toLower(title), /[^a-z0-9]/g, '-')
 
-  return formattedDate + '-' + _.kebabCase(title) + '.html';
+  return formattedDate + '-' + titleSlug + '.html';
 });
 
 Metalsmith(__dirname)
