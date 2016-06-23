@@ -1,0 +1,27 @@
+collections:
+  articles:
+    relative_directory: _articles
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: _articles
+      type: "posts"
+    values:
+      layout: "article"
+      permalink: /article/:year-:month-:day-:title.html
+exclude:
+  - build.sh
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - LICENSE
+  - README
+  - vendor
+timezone: "America/Chicago"
