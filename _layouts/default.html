@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body>
-        {% include navbar.html %}
-        <div class="max-width-3 mx-auto">
-            <div class="clearfix">
-                <div class="page">
-                    {{ content }}
-                </div>
-            </div>
+{% include head.html %}
+<body>
+    {% include navbar.html %}
+    <div class="max-width-3 mx-auto">
+        <div class="clearfix">
+            {{ content }}
         </div>
-    </body>
+    </div>
+</body>
 </html>
