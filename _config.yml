@@ -24,4 +24,10 @@ exclude:
   - LICENSE
   - README
   - vendor
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+    - node_modules/bootstrap-sass/assets/stylesheets
+    - node_modules/colors.css/css
 timezone: "America/Chicago"
