@@ -28,6 +28,8 @@ sass:
   style: compressed
   load_paths:
     - _sass
-    - node_modules/bootstrap-sass/assets/stylesheets
-    - node_modules/colors.css/css
+    - node_modules/bootstrap/scss
+    - node_modules/font-awesome/scss
+    - fonts/source-code-pro
+    - fonts/source-sans-pro
 timezone: "America/Chicago"
