@@ -1,7 +1,21 @@
 @import "variables";
+@import "colors";
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    @extend .mb-4;
+
+    .navbar-nav {
+        @extend .ml-auto;
+    }
 }
 
 .content-container {
@@ -10,13 +24,21 @@ body {
 
 .article {
     @extend .d-flex;
-    @extend .p-2;
-}
+    @extend .flex-column;
 
-.article-date {
+    .head {
+        @extend .p-2;
+        @extend .align-items-center;
+        @extend .d-flex;
+        @extend .flex-column;
+        justify-content: center;
 
-}
+        .meta {
 
-.article-contents {
+        }
+    }
 
+    .contents {
+        @extend .p-2;
+    }
 }

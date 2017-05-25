@@ -3,16 +3,16 @@ layout: default
 ---
 
 <div class="article">
-    <div class="center">
+    <div class="head">
         <h1>{{ page.title }}</h1>
-        <time class="article-date">{{ date date }}</time>
+        <time class="date">{{ date date }}</time>
         <span class="clearfix">
             {% for tag in page.tags %}
                 #{{ tag }}
             {% endfor %}
         </span>
     </div>
-    <div class="article-contents">
+    <div class="contents">
         {{ page.content }}
     </div>
 </div>
