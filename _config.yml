@@ -32,4 +32,5 @@ sass:
     - node_modules/font-awesome/scss
     - fonts/source-code-pro
     - fonts/source-sans-pro
+    - fonts/source-serif-pro
 timezone: "America/Chicago"

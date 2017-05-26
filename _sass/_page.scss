@@ -2,16 +2,17 @@
 @import "colors";
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source sans Pro", sans-serif;
 }
 
 p {
     line-height: 2.2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: "Source Serif Pro", sans-serif;
 }
 
 .navbar {
-    @extend .mb-4;
+    margin-bottom: 60px;
 
     .navbar-nav {
         @extend .ml-auto;
@@ -20,18 +21,25 @@ p {
 
 .content-container {
     @extend .container;
+
+    .contents {
+        @extend .p-2;
+    }
 }
 
 .article {
-    @extend .d-flex;
-    @extend .flex-column;
 
     .head {
         @extend .p-2;
-        @extend .align-items-center;
-        @extend .d-flex;
-        @extend .flex-column;
-        justify-content: center;
+        @extend .col;
+        @extend .col-md-10;
+        @extend .mx-auto;
+        text-align: center;
+        margin-bottom: 60px;
+
+        h1, h2 {
+            font-weight: 300;
+        }
 
         .meta {
 
@@ -40,5 +48,12 @@ p {
 
     .contents {
         @extend .p-2;
+        @extend .col;
+        @extend .col-md-10;
+        @extend .mx-auto;
+
+        .highlight {
+            @extend .p-3;
+        }
     }
 }
