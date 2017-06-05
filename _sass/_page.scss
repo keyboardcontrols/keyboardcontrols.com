@@ -5,18 +5,22 @@ body {
     font-family: "Source sans Pro", sans-serif;
 }
 
-p {
+p, .contents > ul {
     line-height: 2.2rem;
     font-size: 1.3rem;
     font-family: "Source Serif Pro", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
 .navbar {
     margin-bottom: 60px;
-
-    .navbar-nav {
-        @extend .ml-auto;
-    }
 }
 
 .content-container {
