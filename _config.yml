@@ -1,7 +1,7 @@
 excerpt_separator: "<!-- more -->"
 collections:
-  articles:
-    relative_directory: _articles
+  games:
+    relative_directory: _games
     output: true
 defaults:
   -
@@ -11,11 +11,11 @@ defaults:
       layout: "default"
   -
     scope:
-      path: _articles
-      type: "posts"
+      path: _games
+      type: "games"
     values:
-      layout: "article"
-      permalink: /article/:year-:month-:day-:title.html
+      layout: "game"
+      permalink: /game/title.html
 exclude:
   - build.sh
   - Gemfile
@@ -25,6 +25,7 @@ exclude:
   - LICENSE
   - README
   - vendor
+  - build.js
 sass:
   style: compressed
   load_paths:

@@ -5,9 +5,9 @@ title: Home
 <center><h1>Home</h1></center>
 
 <div>
-    {% for article in site.articles %}
-        <p class="h4"><a href="{{ article.url }}">{{ article.title }}</a></p>
-        <time class="article-date"></time>
-        <p>{{ article.excerpt }}</p>
+    {% for game in site.games %}
+        <p class="h4"><a href="{{ game.url }}">{{ game.title }}</a></p>
+        <time class="game-date"></time>
+        <p>{{ game.excerpt }}</p>
     {% endfor %}
 </div>
