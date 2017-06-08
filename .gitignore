@@ -3,3 +3,4 @@ _site
 Thumbs.db
 vendor
 .sass-cache
+npm-debug.log

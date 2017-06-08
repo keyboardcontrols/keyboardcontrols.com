@@ -1,5 +1,5 @@
 ---
-name: Test
+title: Test
 platforms:
   pc:
     layouts:
@@ -26,3 +26,4 @@ platforms:
         y:
           - "Action 7"
           - "Action 8"
+---
