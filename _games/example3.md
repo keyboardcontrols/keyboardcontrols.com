@@ -1,29 +1,32 @@
 ---
 title: Example3
 platforms:
-  pc:
+  - title: pc
     layouts:
-      default:
-        x:
-          - "Action 1"
-          - "Action 2"
-        y:
-          - "Action 3"
-          - "Action 4"
-  xbox:
+      - title: default
+        keys:
+          x:
+            - "123"
+            - "321"
+          y:
+            - "456"
+            - "654"
+  - title: xbox
     layouts:
-      default:
-        x:
-          - "Action 1"
-          - "Action 2"
-        y:
-          - "Action 3"
-          - "Action 4"
-      alternate:
-        x:
-          - "Action 5"
-          - "Action 6"
-        y:
-          - "Action 7"
-          - "Action 8"
+      - title: default
+        keys:
+          x:
+            - "123"
+            - "321"
+          y:
+            - "456"
+            - "654"
+      - title: alternate
+        keys:
+          x:
+            - "123"
+            - "321"
+          y:
+            - "456"
+            - "654"
 ---
