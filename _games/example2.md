@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Example2
 platforms:
   pc:
     layouts:

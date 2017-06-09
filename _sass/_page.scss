@@ -30,7 +30,7 @@ img {
     }
 }
 
-.article {
+.game {
 
     .head {
         @extend .p-2;
@@ -54,9 +54,5 @@ img {
         @extend .col;
         @extend .col-md-10;
         @extend .mx-auto;
-
-        .highlight {
-            @extend .p-3;
-        }
     }
 }

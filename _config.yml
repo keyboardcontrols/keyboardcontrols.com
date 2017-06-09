@@ -15,7 +15,7 @@ defaults:
       type: "games"
     values:
       layout: "game"
-      permalink: /games/:title.html
+      permalink: /:collection/:title.html
 exclude:
   - build.sh
   - Gemfile

@@ -16,12 +16,10 @@
     "aws-sdk": "2.54.0",
     "bootstrap": "4.0.0-alpha.6",
     "font-awesome": "4.7.0",
-    "webpack": "2.6.1",
-    "js-yaml": "3.8.4"
+    "webpack": "2.6.1"
   },
   "scripts": {
     "build:jekyll": "jekyll build",
-    "build:js": "webpack js/app.js _site/js/bundle.js",
-    "build:yaml": ""
+    "build:js": "webpack js/app.js _site/js/bundle.js"
   }
 }
