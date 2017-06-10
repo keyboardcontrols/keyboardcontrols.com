@@ -45,4 +45,58 @@ platforms:
             - scope zoom out
           "arrow keys":
             - gestures
+      - title: pause/map
+        keys:
+          esc:
+            - close menu
+          e:
+            - open / close item menu
+          z:
+            - move item / drag & drop
+          "1-9":
+            - equipment slots
+          space:
+            - menu detail
+          enter:
+            - menu detail
+          x:
+            - open / close co-op item menu
+          m:
+            - map
+          "arrow keys":
+            - move cursor
+  - title: xbox
+    layouts:
+      - title: default
+        keys:
+          "lb + rt":
+            - knife attack 
+          "ls":
+            - move
+          "lt + rt":
+            - attack
+          "lt + a":
+            - reload
+          "d-pad":
+            - item shortcuts
+          "back button":
+            - skip cinematic
+          "rs":
+            - control camera
+          start:
+            - pause menu
+          "ls up + a":
+            - run
+          "ls down + a":
+            - 180 degree turn
+          x:
+            - context sensative action
+          b:
+            - co-op actions
+          y:
+            - item menu
+          rb:
+            - display map
+          rt:
+            - locate partner
 ---
