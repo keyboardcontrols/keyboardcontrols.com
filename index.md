@@ -6,8 +6,8 @@ title: Home
 
 <div class="row">
     {% for game in site.games %}
-        <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card" style="width:20%; margin:0 10px;">
+            <img class="card-img-top" src="" alt="game">
             <div class="card-block">
                 <a class="card-link" href="{{ game.url }}">
                     {{ game.title }}
