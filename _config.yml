@@ -26,6 +26,9 @@ exclude:
   - README
   - vendor
   - build.js
+  - yarn.lock
+  - yarnclean
+  - webpack.config.js
 sass:
   style: compressed
   load_paths:
