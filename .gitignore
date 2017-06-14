@@ -4,3 +4,4 @@ Thumbs.db
 vendor
 .sass-cache
 npm-debug.log
+config.json
