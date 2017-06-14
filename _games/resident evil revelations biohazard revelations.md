@@ -31,7 +31,7 @@ platforms:
             - swim
           f:
             - action
-            - (in water) dive
+            - dive (in water)
           enter:
             - confirm
           "right mouse":
@@ -47,7 +47,9 @@ platforms:
             - reload
           "left mouse":
             - confirm
-            - fire / use knife / use Genesis
+            - fire
+            - use knife
+            - use genesis
           "forward scroll":
             - scope zoom-in
           "back scroll":
@@ -82,4 +84,42 @@ platforms:
             - cool down
           tab:
             - use herb
+  - title: xbox
+    layouts:
+      - title: default
+        keys:
+          lb:
+            - ready genesis
+            - emotions (in combination with face buttons)
+          lt:
+            - aim
+          rt:
+            - use knife
+            - fire(while aiming)
+          rb:
+            - use subweapon
+          x:
+            - reload
+          y:
+            - use herb
+          b:
+            - cancel
+          a:
+            - confirm
+            - check
+            - perform action
+            - quick turn (while moving backwards)
+          rs:
+            - strafe
+            - move camera vertically
+          ls:
+            - move
+          "d-pad up or down":
+            - switch subweapon
+          "d-pad left or right":
+            - switch weapon
+          back:
+            - menu
+          start:
+            - pause menu
 ---
