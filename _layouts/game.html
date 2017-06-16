@@ -10,19 +10,19 @@ layout: default
     </div>
     <div class="row">
         <div class="contents">
-            <a href="mailto:hello@keyboardcontrols.com" class="btn btn-primary">Report Invalid Controls</a>
-            <a href="https://github.com/keyboardcontrols/keyboardcontrols.com" class="btn btn-primary">Submit Update</a>
             {% for platform in page.platforms %}
                 <h1>{{ platform.title }}</h1>
                 {% for layout in platform.layouts %}
                     <h3>{{ layout.title }}</h3>
-                    <ul>
                         {% for key in layout.keys %}
                             {% for action in key[1] %}
-                                <li>{{ key[0] }} - {{ action }}</li>
+                                    <div class="card" style="width: 20rem;margin:10px 0;">
+                                        <div class="card-block">
+                                            {{ key[0] }} - {{ action }}
+                                        </div>
+                                    </div>
                             {% endfor %}
                         {% endfor %}
-                    </ul>
                 {% endfor %}
             {% endfor %}
             {{ page.content }}
